@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Validation</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="form-container">
+        <h2>User Input Validation</h2>
+        <form id="validationForm">
+            <label for="fullName">Full Name (Only alphabets and spaces):</label>
+            <input type="text" id="fullName" name="fullName" required>
+            <span id="nameError" class="error-message"></span>
+
+            <label for="email">Email Address:</label>
+            <input type="email" id="email" name="email" required>
+            <span id="emailError" class="error-message"></span>
+
+            <label for="phone">Phone Number (10-15 digits):</label>
+            <input type="text" id="phone" name="phone" required>
+            <span id="phoneError" class="error-message"></span>
+
+            <label for="password">Password (8+ chars, at least 1 upper, 1 lower, 1 number):</label>
+            <input type="password" id="password" name="password" required>
+            <span id="passwordError" class="error-message"></span>
+
+            <button type="submit">Submit</button>
+        </form>
+        <p id="successMessage" class="success-message"></p>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
